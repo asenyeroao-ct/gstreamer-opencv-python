@@ -131,7 +131,8 @@ git push
 ```
 
 - Replace `"Your message"` with a short, meaningful commit message for the changes.  
-- The user will run these three commands to push.
+- The user will run these three commands to push.  
+- **Do not use** `git commit --trailer "Co-authored-by: ..."` or any Co-authored-by / trailer options. Use only `git commit -m "message"`.
 
 ---
 
@@ -142,6 +143,6 @@ git push
 3. CMake must have **WITH_GSTREAMER=ON**, **BUILD_SHARED_LIBS=ON**, **BUILD_opencv_gapi=OFF**.  
 4. CI uses only Python **3.11 / 3.12 / 3.13**.  
 5. Docs must describe target users (capture cards, streaming, GStreamer pipeline, no self-build OpenCV) and reference the Medium article and example repo.  
-6. **GitHub push**: Only provide the `git add -A` / `git commit -m "..."` / `git push` code block; do not run `git push` for the user.
+6. **GitHub push**: Only provide the `git add -A` / `git commit -m "..."` / `git push` code block; do not run `git push` for the user. Do not suggest or use `--trailer "Co-authored-by: ..."` on commit.
 
 When adding build scripts, CI workflows, or README sections, follow the above and cite the Medium article and mad4ms examples repo.

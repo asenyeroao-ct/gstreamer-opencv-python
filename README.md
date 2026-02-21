@@ -18,14 +18,19 @@ For users with capture cards, real-time / low-latency streaming needs, GStreamer
 GST-openCV/
 ├── README.md            # This file
 ├── build_workspace/     # Build directory (clone OpenCV here, run CMake and build)
-└── wheels/              # Built wheels, organized by Python version
-    ├── cp311/           # Python 3.11 wheels
-    ├── cp312/           # Python 3.12 wheels
-    └── cp313/           # Python 3.13 wheels
+└── wheels/              # Built wheels, organized by OpenCV version then Python version
+    ├── 4.9/             # OpenCV 4.9.x wheels
+    │   ├── cp311/       # Python 3.11
+    │   ├── cp312/       # Python 3.12
+    │   └── cp313/       # Python 3.13
+    └── 4.13/            # OpenCV 4.13.x wheels
+        ├── cp311/
+        ├── cp312/
+        └── cp313/
 ```
 
 - **Build**: Do all compilation inside `build_workspace/` (clone opencv, opencv_contrib, build). See [build_workspace/README.md](build_workspace/README.md).
-- **Output**: Copy built wheels from the build directory into `wheels/cp3xx/`, then upload from there to GitHub Releases or PyPI.
+- **Output**: Wheels go to `wheels/<opencv_version>/cp3xx/` (e.g. `wheels/4.9/cp311/`, `wheels/4.13/cp311/`), then upload from there to GitHub Releases or PyPI.
 
 ---
 

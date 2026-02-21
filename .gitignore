@@ -10,13 +10,26 @@ dist/
 *.egg
 .venv/
 venv/
+venv_3.11/
+venv_3.12/
+venv_3.13/
 ENV/
 
 # Build workspace: build artifacts and source (not versioned)
+build_workspace/
 build_workspace/opencv
 build_workspace/opencv_contrib
 build_workspace/build
+build_workspace/build_cp311
+build_workspace/build_cp312
+build_workspace/build_cp313
+build_workspace/build_4.13_cp311
+build_workspace/build_4.13_cp312
+build_workspace/build_4.13_cp313
+build_workspace/opencv_4.13.0
+build_workspace/opencv_contrib_4.13.0
 build_workspace/out
+build_workspace/wheel_staging
 build_workspace/*.pyd
 build_workspace/**/*.pyd
 build_workspace/*.dll
@@ -57,3 +70,6 @@ Desktop.ini
 
 # Logs
 *.log
+
+# Project (local only)
+AGENTS.md

@@ -1,0 +1,4 @@
+# Build dependencies for OpenCV + GStreamer wheels (see AGENTS.md)
+wheel
+setuptools
+numpy
