@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+*.egg
+.venv/
+venv/
+ENV/
+
+# Build workspace: build artifacts and source (not versioned)
+build_workspace/opencv
+build_workspace/opencv_contrib
+build_workspace/build
+build_workspace/out
+build_workspace/*.pyd
+build_workspace/**/*.pyd
+build_workspace/*.dll
+build_workspace/**/*.dll
+build_workspace/*.lib
+build_workspace/**/*.lib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Visual Studio / MSVC
+.vs/
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+x64/
+Debug/
+Release/
+
+# IDE / Editor
+.idea/
+*.swp
+*.swo
+*~
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
