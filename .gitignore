@@ -71,5 +71,5 @@ Desktop.ini
 # Logs
 *.log
 
-# Project (local only)
-AGENTS.md
+# Project (local only, do not commit)
+/AGENTS.md
