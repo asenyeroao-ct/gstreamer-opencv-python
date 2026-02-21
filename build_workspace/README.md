@@ -9,7 +9,7 @@ All **OpenCV + GStreamer** compilation is done in this directory.
    - `opencv_contrib/` — extra modules (optional)
 
 2. Create a `build/` (or your preferred) directory here and run CMake configure and build.  
-   Use the CMake / GStreamer paths from the “Default paths” section in [AGENTS.md](../AGENTS.md).
+   Default paths for this repo: **GStreamer** `C:\Program Files\gstreamer\1.0\msvc_x86_64`, **CMake** `C:\Program Files\CMake\bin`.
 
 3. After building, **copy** the resulting **wheel** (or the wheel you package from `cv2.*.pyd` and DLLs) **out** to the parent `wheels/` folder by Python version:
    - **Python 3.11** → `../wheels/cp311/`
