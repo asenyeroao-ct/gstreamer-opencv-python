@@ -12,11 +12,13 @@ All **OpenCV + GStreamer** compilation is done in this directory.
    Default paths for this repo: **GStreamer** `C:\Program Files\gstreamer\1.0\msvc_x86_64`, **CMake** `C:\Program Files\CMake\bin`.
 
 3. After building, **copy** the resulting **wheel** (or the wheel you package from `cv2.*.pyd` and DLLs) **out** to the parent `wheels/` folder by Python version:
-   - **Python 3.11** → `../wheels/cp311/`
+   - **Python 3.11** → `../wheels/cp311/` (or `../wheels/4.9/cp311/`, `../wheels/4.13/cp311/` 等)
    - **Python 3.12** → `../wheels/cp312/`
    - **Python 3.13** → `../wheels/cp313/`
 
 You can then upload from `wheels/` to GitHub Releases or PyPI.
+
+**Wheel 打包細節**（檔名規則、.whl 內部結構、METADATA/WHEEL/RECORD 格式、UTF-8 無 BOM 要求）：見 [../docs/wheel-packaging.md](../docs/wheel-packaging.md)。
 
 ## Notes
 
